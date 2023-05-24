@@ -24,7 +24,7 @@ library(ggplot2); require(GenomicSEM); library(ggpubr); library(ieugwasr); libra
 
 #-----Munge
 hi <- "HI_forGenomicSEM.txt" #Change the file name as needed #N=379598; sample.prev=NA; pop.prev=NA (because its a continuous trait - if it were binary, look at wikihow on github for calculating Neff)
-sd <- "SD_forGenomicSEM.txt" #N=501785; sample.prev=NA; pop.prev=NA
+sd <- "SD_forGenomicSEM.txt" #N=440350; sample.prev=NA; pop.prev=NA
 oi <- "OI_forGenomicSEM.txt" #N=282963; sample.prev=NA; pop.prev=NA
 #create vector of the summary statistics files
 files <- c(hi,sd,oi)
@@ -34,7 +34,7 @@ hm3 <- "eur_w_ld_chr/w_hm3.snplist"
 #name the traits 
 trait.names <- c("HI", "SD", "OI")
 #list the sample sizes. All have SNP-specific sum of effective sample sizes (Neff), SD is continuous so it's NA
-N = c(379598, 501785, 282963)
+N = c(379598, 440350, 282963)
 #define the imputation quality filter
 info.filter = 0.9
 #define the MAF filter
